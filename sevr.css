@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.categories {
+    padding: 40px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cat-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.cat-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cat-link {
+    color: #222;
+    text-decoration: none;
+}
+
+.cat-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.cat-info {
+    padding: 12px;
+}
+
+.cat-name {
+    margin: 0 0 5px;
+}
+
+.cat-viewers {
+    margin: 0;
+    color: #777;
+}
+
+.promo {
+    background: #222;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.promo-tag {
+    margin: 0 0 10px;
+}
+
+.promo-title {
+    margin: 0 0 10px;
+}
+
+.promo-desc {
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #9147ff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.streamers-grid {
+    list-style: none;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.streamer-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.streamer-ava-wrap {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.streamer-ava {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.online {
+    border: 3px solid #20c76b;
+}
+
+.streamer-name {
+    margin: 10px 0 5px;
+}
+
+.streamer-game {
+    margin: 0 0 15px;
+    color: #777;
+}
+
+.follow-btn {
+    border: 0;
+    background: #9147ff;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.footer {
+    background: #181818;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 120px;
+}
+
+.footer-copy {
+    margin-bottom: 0;
+    color: #aaa;
+}
+
+@media (min-width: 768px) {
+    .cat-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .streamers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cat-img {
+        height: 267px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cat-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .streamers-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
